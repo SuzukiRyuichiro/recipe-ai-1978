@@ -77,3 +77,7 @@ end
 gem "ruby_llm", "~> 1.6"
 
 gem "cloudinary", "~> 2.3"
+
+gem "solid_queue", "~> 1.2"
+
+gem "rubocop"
