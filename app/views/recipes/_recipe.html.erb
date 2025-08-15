@@ -3,15 +3,17 @@
     <strong>Name:</strong>
     <%= recipe.name %>
   </p>
-
   <p>
     <strong>Ingredients:</strong>
     <%= recipe.ingredients %>
   </p>
-
   <p>
     <strong>Content:</strong>
     <%= recipe.content %>
   </p>
-
+  <% if recipe.photo.attached? %>
+    <%= cl_image_tag(recipe.photo.key, width: 400) %>
+  <% else %>
+    <%= image_tag 'cooking.jpg', alt: "a chef cooking", width: 400 %>
+  <% end %>
 </div>
