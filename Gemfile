@@ -75,5 +75,8 @@ group :test do
 end
 
 gem "ruby_llm", "~> 1.6"
-
 gem "cloudinary", "~> 2.3"
+
+gem "solid_queue"
+
+gem "mission_control-jobs"
